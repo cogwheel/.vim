@@ -1,4 +1,4 @@
-set lines=40 columns=120
+set lines=60 columns=180
 
 if has("win32")
 	set guifont=Consolas:h11
