@@ -12,6 +12,8 @@ set softtabstop=4
 set expandtab
 set showmatch
 
+set hidden
+
 " disable beeping
 set vb t_vb=
 
