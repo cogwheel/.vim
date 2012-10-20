@@ -1,8 +1,6 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-colorscheme desert
-
 set nocompatible
 set autoindent
 set smartindent
