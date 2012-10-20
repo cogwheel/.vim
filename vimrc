@@ -39,6 +39,8 @@ if &t_Co > 2 || has('gui_running')
 endif
 
 filetype plugin indent on
+colorscheme desert256
+
 augroup vimrcEx
 au!
 
