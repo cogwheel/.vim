@@ -15,6 +15,11 @@ set hidden
 " disable beeping
 set vb t_vb=
 
+let g:netrw_liststyle=3     " Tree mode view
+let g:netrw_browse_split=4  " Open file in previous buffer
+let g:netrw_preview=1       " Preview window shown in vsplit
+let g:netrw_winsize=20      " Make netrw window smaller
+
 set ruler
 set incsearch
 set number
