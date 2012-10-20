@@ -30,9 +30,11 @@ else
 	set backup
 endif
 
-let &t_Co = 256
+if has('gui_running') || $TERM == "xterm"
+    let &t_Co = 256
+endif
 
-if &t_Co > 2 || has('gui_running')
+if &t_Co > 2
 	syntax on
 	highlight comment ctermfg=darkgray
 	set hlsearch
