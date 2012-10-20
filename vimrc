@@ -30,6 +30,8 @@ else
 	set backup
 endif
 
+let &t_Co = 256
+
 if &t_Co > 2 || has('gui_running')
 	syntax on
 	highlight comment ctermfg=darkgray
