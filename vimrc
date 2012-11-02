@@ -58,3 +58,10 @@ if has('autocmd')
         \   exe "normal! g`\"" |
         \ endif
 endif
+
+
+"
+" MAPPINGS
+"
+
+map <Leader>nt :NERDTree<cr>
