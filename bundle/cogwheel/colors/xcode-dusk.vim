@@ -64,7 +64,7 @@ hi Number                    guifg=#786dc4
 hi Float                     guifg=#786dc4
 
 hi Statement        gui=NONE guifg=#b21889
-hi Type             gui=NONE guifg=#b21889
+hi Type             gui=NONE guifg=#00a0be
 hi Boolean                   guifg=#b21889
 
 hi Identifier                guifg=#eeeeee
