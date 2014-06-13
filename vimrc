@@ -12,6 +12,8 @@ set showmatch
 
 set hidden
 
+set cino=g0,(0
+
 " disable beeping
 set vb t_vb=
 
