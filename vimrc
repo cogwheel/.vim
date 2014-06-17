@@ -48,7 +48,7 @@ if &t_Co > 2
 endif
 
 filetype plugin indent on
-colorscheme desert256
+colorscheme xcode-dusk " desert256
 
 augroup vimrcEx
 au!

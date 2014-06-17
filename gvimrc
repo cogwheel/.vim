@@ -7,5 +7,5 @@ elseif has("mac")
     set guifont=Monaco:h11
     color xcode-dusk
 else
-	set guifont=Monospace\ 11
+	set guifont=DejaVu\ Sans\ Mono\ 10,Monospace\ 10
 endif
