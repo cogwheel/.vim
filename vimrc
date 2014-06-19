@@ -22,6 +22,9 @@ let g:netrw_browse_split=4  " Open file in previous buffer
 let g:netrw_preview=1       " Preview window shown in vsplit
 let g:netrw_winsize=20      " Make netrw window smaller
 
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=25
+
 set ruler
 set incsearch
 set number
