@@ -1,3 +1,4 @@
+" let g:pathogen_disabled = [ 'YouCompleteMe' ]
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -70,6 +71,7 @@ let g:ycm_complete_in_comments = 1
 let g:ycm_error_symbol = '>>'
 let g:ycm_warning_symbol = ']]'
 let g:ycm_enable_diagnostic_signs = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1
 nnoremap ,g :YcmCompleter GoToDeclaration <CR>
 nnoremap ,y :YcmCompleter GoToDefinition <CR>
 

@@ -18,3 +18,7 @@
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 	branch = master
+[submodule "bundle/glsl.vim"]
+	path = bundle/glsl.vim
+	url = https://github.com/beyondmarc/glsl.vim.git
+    branch = master
