@@ -49,20 +49,22 @@ if &t_Co > 2
 	syntax on
 	highlight comment ctermfg=darkgray
 	set hlsearch
+
 endif
 
 filetype plugin indent on
 colorscheme xcode-dusk " desert256
 
 augroup vimrcEx
-au!
 
 if has('autocmd')
-    autocmd FileType text setlocal textwidth=78
+    autocmd!
     autocmd BufReadPost *
         \ if line("'\"") > 1 && line("'\"") <= line("$") |
         \   exe "normal! g`\"" |
         \ endif
+    autocmd BufNewFile,BufRead *.rml set filetype=xml
+    autocmd BufNewFile,BufRead *.rcss set filetype=css
 endif
 
 " YCM
