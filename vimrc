@@ -1,4 +1,8 @@
-" let g:pathogen_disabled = [ 'YouCompleteMe' ]
+if has('win32')
+    " YCM on windows is a PITA and visual studio has decent vim emulation
+    let g:pathogen_disabled = [ 'YouCompleteMe' ]
+endif
+
 call pathogen#infect()
 call pathogen#helptags()
 
