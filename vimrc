@@ -34,6 +34,7 @@ set ruler
 set incsearch
 set number
 set backspace=indent,eol,start whichwrap+=<,>,[,]
+set nowrap
 
 if has('mouse')
 	set mouse=a
@@ -69,6 +70,8 @@ if has('autocmd')
         \ endif
     autocmd BufNewFile,BufRead *.rml set filetype=xml
     autocmd BufNewFile,BufRead *.rcss set filetype=css
+    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    autocmd WinLeave * setlocal nocursorline
 endif
 
 " YCM
