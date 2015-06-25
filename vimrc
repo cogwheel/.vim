@@ -37,13 +37,13 @@ set backspace=indent,eol,start whichwrap+=<,>,[,]
 set nowrap
 
 if has('mouse')
-	set mouse=a
+    set mouse=a
 endif
 
 if has('vms')
-	set nobackup
+    set nobackup
 else
-	set backup
+    set backup
 endif
 
 if has('gui_running') || $TERM == "xterm"
@@ -51,27 +51,28 @@ if has('gui_running') || $TERM == "xterm"
 endif
 
 if &t_Co > 2
-	syntax on
-	highlight comment ctermfg=darkgray
-	set hlsearch
+    syntax on
+    highlight comment ctermfg=darkgray
+    set hlsearch
 
 endif
 
 filetype plugin indent on
 colorscheme xcode-dusk " desert256
 
-augroup vimrcEx
 
 if has('autocmd')
-    autocmd!
-    autocmd BufReadPost *
-        \ if line("'\"") > 1 && line("'\"") <= line("$") |
-        \   exe "normal! g`\"" |
-        \ endif
-    autocmd BufNewFile,BufRead *.rml set filetype=xml
-    autocmd BufNewFile,BufRead *.rcss set filetype=css
-    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-    autocmd WinLeave * setlocal nocursorline
+    augroup vimrcEx
+        autocmd!
+        autocmd BufReadPost *
+                    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+                    \   exe "normal! g`\"" |
+                    \ endif
+        autocmd BufNewFile,BufRead *.rml set filetype=xml
+        autocmd BufNewFile,BufRead *.rcss set filetype=css
+        autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+        autocmd WinLeave * setlocal nocursorline
+    augroup END
 endif
 
 " YCM
