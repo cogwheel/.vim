@@ -75,6 +75,16 @@ if has('autocmd')
     augroup END
 endif
 
+if has('multi_byte')
+    if &termencoding == ""
+        let &termencoding = &encoding
+    endif
+    set encoding=utf-8
+    setglobal fileencoding=utf-8
+    "setglobal bomb
+    set fileencodings=ucs-bom,utf-8,latin1,ucs-2le
+endif
+
 " YCM
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_complete_in_comments = 1
