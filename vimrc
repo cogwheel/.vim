@@ -35,6 +35,7 @@ set incsearch
 set number
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 set nowrap
+set linebreak    " for when we do want wrap
 
 if has('mouse')
     set mouse=a
