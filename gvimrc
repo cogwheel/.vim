@@ -1,3 +1,8 @@
 set lines=50 columns=150
 color xcode-dusk
-set guifont=Hack:h9
+
+if has("win32") || has("mac")
+    set guifont=Hack:h11
+else
+    set guifont=Hack 10,Monospace\ 10
+endif
