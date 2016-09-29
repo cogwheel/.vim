@@ -56,6 +56,30 @@ endif
 filetype plugin indent on
 colorscheme xcode-dusk " desert256
 
+" Rainbow operators
+let g:rainbow_active = 1
+let g:rainbow_conf =
+\ {
+\  'operators': '_[\,\+\*\-\&\^\!\.\<\>\=\|\?]_',
+\  'parentheses':
+\  [
+\    'start=/(/ end=/)/ fold',
+\    'start=/\[/ end=/\]/ fold',
+\    'start=/{/ end=/}/ fold'
+\  ],
+\  'separately':
+\  {
+\    'jank':
+\    {
+\      'parentheses':
+\      [
+\        'start=/(\ze[^;]/ end=/)/ fold',
+\        'start=/\[/ end=/\]/ fold',
+\        'start=/{/ end=/}/ fold'
+\      ],
+\    },
+\  }
+\}
 
 if has('autocmd')
     augroup vimrcEx
