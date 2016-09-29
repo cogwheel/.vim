@@ -40,3 +40,6 @@
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "bundle/paredit.vim"]
+	path = bundle/paredit.vim
+	url = https://github.com/vim-scripts/paredit.vim
