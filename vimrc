@@ -120,3 +120,6 @@ nnoremap ,y :YcmCompleter GoToDefinition <CR>
 "
 
 map <Leader>nt :NERDTree<cr>
+
+inoremap jk <ESC>
+inoremap kj <ESC>
