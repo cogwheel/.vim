@@ -110,3 +110,6 @@ endif
 "
 
 map <Leader>nt :NERDTree<cr>
+
+inoremap jk <ESC>
+inoremap kj <ESC>

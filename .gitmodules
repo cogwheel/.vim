@@ -18,10 +18,6 @@
 	path = bundle/glsl.vim
 	url = https://github.com/beyondmarc/glsl.vim.git
     branch = master
-[submodule "bundle/vim-clojure-static"]
-	path = bundle/vim-clojure-static
-	url = https://github.com/guns/vim-clojure-static.git
-    branch = master
 [submodule "bundle/rust.vim"]
     path = bundle/rust.vim
     url = https://github.com/rust-lang/rust.vim.git
