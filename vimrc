@@ -24,6 +24,10 @@ let g:netrw_winsize=20      " Make netrw window smaller
 
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=25
+let g:ctrlp_custom_ignore='node_modules'
+
+let g:clojure_align_multiline_strings=1
+autocmd BufNewFile,BufRead *.edn setfiletype clojure
 
 set ruler
 set incsearch
