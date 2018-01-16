@@ -1,3 +1,5 @@
+let g:elm_setup_keybindings = 0
+
 call pathogen#infect()
 call pathogen#helptags()
 
