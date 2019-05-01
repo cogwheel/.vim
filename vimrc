@@ -1,9 +1,31 @@
 let g:elm_setup_keybindings = 0
 
-call pathogen#infect()
-call pathogen#helptags()
-
 set nocompatible
+
+" Vundle setup
+filetype off
+set runtimepath+=~/.vim/bundle/Vundle.vim,~/vimfiles/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ElmCast/elm-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'beyondmarc/glsl.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'rust-lang/rust.vim'
+Plugin 'fsharp/vim-fsharp'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'cespare/vim-toml'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'shmup/vim-sql-syntax'
+Plugin 'desert256.vim'
+Plugin 'guicolorscheme.vim'
+
+call vundle#end()
+filetype plugin indent on
+
 set autoindent
 set smartindent
 set tabstop=4
@@ -11,12 +33,14 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set showmatch
-
+set ruler
+set incsearch
+set number
+set backspace=indent,eol,start whichwrap+=<,>,[,]
+set nowrap
+set linebreak    " for when we do want wrap
 set hidden
-
 set cino=g0,(0
-
-" disable beeping
 set vb t_vb=
 
 let g:netrw_liststyle=3     " Tree mode view
@@ -30,13 +54,6 @@ let g:ctrlp_custom_ignore='node_modules'
 
 let g:clojure_align_multiline_strings=1
 autocmd BufNewFile,BufRead *.edn setfiletype clojure
-
-set ruler
-set incsearch
-set number
-set backspace=indent,eol,start whichwrap+=<,>,[,]
-set nowrap
-set linebreak    " for when we do want wrap
 
 if has('mouse')
     set mouse=a
@@ -59,7 +76,6 @@ if &t_Co > 2
 
 endif
 
-filetype plugin indent on
 colorscheme xcode-dusk " desert256
 
 if has('autocmd')
