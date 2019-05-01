@@ -62,31 +62,6 @@ endif
 filetype plugin indent on
 colorscheme xcode-dusk " desert256
 
-" Rainbow operators
-let g:rainbow_active = 1
-let g:rainbow_conf =
-\ {
-\  'operators': '_[\,\+\*\-\&\^\!\.\<\>\=\|\?]_',
-\  'parentheses':
-\  [
-\    'start=/(/ end=/)/ fold',
-\    'start=/\[/ end=/\]/ fold',
-\    'start=/{/ end=/}/ fold'
-\  ],
-\  'separately':
-\  {
-\    'jank':
-\    {
-\      'parentheses':
-\      [
-\        'start=/(\ze[^;]/ end=/)/ fold',
-\        'start=/\[/ end=/\]/ fold',
-\        'start=/{/ end=/}/ fold'
-\      ],
-\    },
-\  }
-\}
-
 if has('autocmd')
     augroup vimrcEx
         autocmd!
@@ -111,21 +86,8 @@ if has('multi_byte')
     set fileencodings=ucs-bom,utf-8,latin1,ucs-2le
 endif
 
-" YCM
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_complete_in_comments = 1
-let g:ycm_error_symbol = '>>'
-let g:ycm_warning_symbol = ']]'
-let g:ycm_enable_diagnostic_signs = 0
-let g:ycm_autoclose_preview_window_after_insertion = 1
-nnoremap ,g :YcmCompleter GoToDeclaration <CR>
-nnoremap ,y :YcmCompleter GoToDefinition <CR>
-
 "
 " MAPPINGS
 "
 
 map <Leader>nt :NERDTree<cr>
-
-inoremap jk <ESC>
-inoremap kj <ESC>

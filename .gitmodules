@@ -14,10 +14,6 @@
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
 	branch = master
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-	branch = master
 [submodule "bundle/glsl.vim"]
 	path = bundle/glsl.vim
 	url = https://github.com/beyondmarc/glsl.vim.git
@@ -37,10 +33,6 @@
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
-    branch = master
-[submodule "bundle/rainbow"]
-	path = bundle/rainbow
-	url = https://github.com/luochen1990/rainbow.git
     branch = master
 [submodule "bundle/vim-toml"]
 	path = bundle/vim-toml
