@@ -21,6 +21,7 @@ Plugin 'cespare/vim-toml'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'shmup/vim-sql-syntax'
 Plugin 'desert256.vim'
+Plugin 'pboettch/vim-cmake-syntax'
 
 call vundle#end()
 filetype plugin indent on
