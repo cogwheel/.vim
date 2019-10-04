@@ -135,6 +135,7 @@ hi link htmlTag                         xmlTag
 hi link htmlTagName                     xmlTagName
 hi link htmlEndTag                      xmlEndTag
 hi link htmlArg                         xmlAttrib
+hi htmlLink guifg=#3366ff gui=underline
 
 "
 " Doxygen
