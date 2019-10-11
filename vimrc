@@ -22,6 +22,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'shmup/vim-sql-syntax'
 Plugin 'desert256.vim'
 Plugin 'pboettch/vim-cmake-syntax'
+Plugin 'mechatroner/rainbow_csv'
 
 call vundle#end()
 filetype plugin indent on
