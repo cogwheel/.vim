@@ -27,11 +27,13 @@ Plugin 'mechatroner/rainbow_csv'
 call vundle#end()
 filetype plugin indent on
 
+let indent=4
+
 set autoindent
 set smartindent
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+execute "set tabstop=".indent
+execute "set shiftwidth=".indent
+execute "set softtabstop=".indent
 set expandtab
 set showmatch
 set ruler
